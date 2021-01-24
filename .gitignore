@@ -1,0 +1,44 @@
+.env
+.env-template
+.DS_Store
+**/__pycache__/**
+**/node_modules/**
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.idea
+node_modules/
+.vscode
+project/db.sqlite3
+test-reports/*
+htmlcov/*
+.pytest_cache/*
+coverage.xml
+.coverage
+.cache
+mongo_to_sql.egg-info
+.pytest_cache
+.migrate_config
