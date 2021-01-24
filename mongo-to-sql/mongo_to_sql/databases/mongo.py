@@ -25,6 +25,8 @@ class MongoDatabase:
 
     def drop_database(self):
         with self.client as mongo_client:
+            print(self.dbname)
+            mongo_client.drop_database(self.dbname)
             mongo_client.drop_database(self.dbname)
 
     def get_database(self):
@@ -37,13 +39,13 @@ class MongoDatabase:
 
     def get_mongodb_collection_names(self):
         database = self.get_database()
-        return database.collection_names()
+        return database.list_list_collection_names()
 
     def get_documents_from_collection(self, collection):
         return list(self.get_mongodb_database_collection(collection).find())[:10]
 
     def get_documents_from_all_collections(self):
         collections = dict()
-        collection_names = self.get_mongodb_collection_names()
-        [collections.update({name: self.get_documents_from_collection(name)}) for name in collection_names]
+        list_collection_names = self.get_mongodb_collection_names()
+        [collections.update({name: self.get_documents_from_collection(name)}) for name in list_collection_names]
         return collections

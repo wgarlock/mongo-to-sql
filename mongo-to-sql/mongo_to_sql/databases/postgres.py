@@ -2,8 +2,9 @@
 import environ
 import psycopg2
 import psycopg2.extras
-from mongo_to_sql.databases.utils import list_to_dict, PostgresColumnMapper, PostgresValueCleaner
 from psycopg2 import sql
+
+from mongo_to_sql.databases.utils import list_to_dict, PostgresColumnMapper, PostgresValueCleaner
 
 env = environ.Env(DEBUG=(bool, False))
 

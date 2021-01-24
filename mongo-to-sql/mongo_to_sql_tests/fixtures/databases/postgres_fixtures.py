@@ -1,7 +1,8 @@
 import pytest
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+
 from mongo_to_sql.databases.postgres import PostgresDatabase
 from mongo_to_sql_tests.constants.postgres import postgres_database_name
-from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 
 @pytest.fixture(scope="module")

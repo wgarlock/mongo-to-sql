@@ -1,7 +1,8 @@
 import json
-from mongo_to_sql.databases.exceptions import DataDictionaryMalformed, InconsistentMongoDBData
 from psycopg2 import sql
 from statistics import mean, stdev
+
+from mongo_to_sql.databases.exceptions import DataDictionaryMalformed, InconsistentMongoDBData
 
 
 class PostgresColumnMapper:

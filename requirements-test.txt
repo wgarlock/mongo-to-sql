@@ -10,6 +10,7 @@ coverage==5.3
 flake8==3.8.4
 importlib-metadata==3.4.0  # via flake8, pluggy, pytest
 iniconfig==1.1.1          # via pytest
+isort==5.7.0
 lorem-text==1.5
 mccabe==0.6.1             # via flake8
 packaging==20.8           # via pytest
