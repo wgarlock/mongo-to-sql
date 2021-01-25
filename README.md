@@ -1,3 +1,7 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/371bc264163d8de4c970/maintainability)](https://codeclimate.com/github/wgarlock/mongo-to-sql/maintainability)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/wgarlock/mongo-to-sql.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/wgarlock/mongo-to-sql/alerts/)
+[![codecov](https://codecov.io/gh/wgarlock/mongo-to-sql/branch/main/graph/badge.svg?token=UBMD3BDMFW)](https://codecov.io/gh/wgarlock/mongo-to-sql)
+[![Known Vulnerabilities](https://snyk.io/test/github/wgarlock/mongo-to-sql/badge.svg)](https://snyk.io/test/github/wgarlock/mongo-to-sql)
 - Introduction
 
 Migrating from MongoDB to Postgresql can be a bit of a nightmare. There are some paid services that can
