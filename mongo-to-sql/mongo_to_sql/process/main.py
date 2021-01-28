@@ -13,3 +13,12 @@ def main(dbname=None):
     postgres_database = postgres.PostgresDatabase(dbname=dbname)
     results = mongo_database.get_documents_from_all_collections()
     postgres_database.insert_multiple_objects_from_mongodb(results)
+
+def import_json_from_directory(dbname=None, directory=None):
+    mongo_database = mongo.MongoDatabase()
+    if directory and os.path.exists(directory):
+        mongo_database.post_collections_from_directory(directory=directory)
+    else:
+        #TODO Better Exception here
+        raise Exception("You must specify an absolute path to a directory {directory} does not exist")
+
